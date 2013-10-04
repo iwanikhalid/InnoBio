@@ -1,0 +1,123 @@
+/******** PB & MT DEW *******************************/
+/******** RESETS ************************************/
+*, html, body, ul, li, h1, h2, h3, h4, h5, h6, form, p { margin: 0; padding: 0; }
+ul, li { list-style: none; }
+img { border: none; }
+
+/******** STRUCTURE & SPECIFICS *****************/
+body { background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #444; text-align: center; }
+
+.wrap { padding: 0 35px; width: 890px; background: #ccc; repeat-y; margin: 0 auto; text-align: left; }
+#header { background: #565555; height: 87px; }
+#nav { height: 29px; background: #fff url(img/menu.gif) no-repeat; }
+#banner { height: 335px; }
+#content { min-height: 100px; height: auto !important; height: 100px;  }
+#footer  {background: url(img/footer.gif) no-repeat; height: 160px; }
+
+/* style, variant, weight, size, line-height, family */
+
+.footer { margin: 10px 0; color: #fff; font-size: 10px; font-family: Verdana; font-weight: bold; }
+.footer a { color: #fff; }
+
+/******** REPEATS ********************************/
+h1,h2,h3,h4,p,ul,ol,table { margin-bottom: 10px; }
+
+a { color: #db051f; text-decoration: none; }
+a:hover { color: #990000; text-decoration: underline; }
+
+.clearfix { display: inline-block; }
+.clearfix:after { display: block; height: 0; clear: both; content: ".";  visibility: hidden; }
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+img.floatl { margin: 0 10px 0 0; }
+img.floatr { margin: 0 0 0 10px; }
+
+.floatl { float: left; }
+.floatr { float: right; }
+.alignr { text-align: right; }
+.alignl { text-align: left; }
+.alignc { text-align: center; }
+.alignj { text-align: justify; color: #999; font-size: 0.9em; }
+.marg { margin: 0 0 10px 0; }
+.reset, p.reset { margin: 0; }
+
+h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; } /* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
+html { -webkit-font-smoothing: antialiased; } /* maxvoltar.com/archive/-webkit-font-smoothing */
+
+h1 { font-size: 2.2em; letter-spacing: -2px; }
+h2 { font-size: 1.5em; letter-spacing: -1px; }
+h3 { font-size: 1.1em; text-transform: uppercase; letter-spacing: -0.5px; }
+h4 { font-size: 0.9em; }
+h5 { font-size: 0.7em; }
+h6 { font-size: 0.5em; }
+
+h2.pagetitle { color: #fb9f00; font: bold 16px Tahoma; }
+.txtred { color: #ff0200; }
+.txtdarkgrey { color: #8c8c8c; }
+.txtgreen { color: #a5c247; }
+.txtpink { color: #bf2394; }
+.txtcyan { color: #09b4cb; }
+.txtblue { color: #1B6BB5; }
+.alt { background: #fff; }
+
+/*************** Pagination styles */
+
+.pagiwrap { text-align: center; margin: 20px 0; }
+.pagiwrap p { color: #7a7a7a; margin: 20px 0; }
+.pagination a { padding: 2px 5px 2px 5px; margin: 2px 4px; border: 1px solid #dadada; text-decoration: none; color: #7a7a7a; background: #efefef; }
+.pagination a:hover, .pagination a:active { font-weight: bold; color: #6f8b0f; background-color: #dbdbdb; border: 1px solid #c9c9c9; }
+.pagination span.current { padding: 2px 5px 2px 5px; margin: 2px; font-weight: bold; color: #6f8b0f; background-color: #dbdbdb; border: 1px solid #c9c9c9;}	
+.pagination span.disabled { padding: 2px 5px 2px 5px; margin: 2px; color: #DDD; }
+.pagination a.less, .pagination a.more  { color: #6f8b0f; background: none; border: none; }
+html>body .pagination { padding: 0; }	
+
+/*************** Menu */
+
+.menu, .menu ul li {
+	color: #000;
+	/*background: #234;*/
+}
+
+.menu ul {
+	width: 11em;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #000;
+	padding: .4em 1em;
+	display: block;
+	position: relative;
+}
+
+.menu a:hover, .menu li:hover>a {
+	color: #fc3;
+}
+
+.menu li li {	/* create borders around each item */
+	border: 1px solid #ccc;
+}
+.menu ul>li + li {	/* and remove the top border on all but first item in the list */
+	border-top: 0;
+}
+
+.menu li li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 90%;
+}
+
+/* special colouring for "Main menu:", and for "xx submenu" items in ADxMenu
+	placed here to clarify the terminology I use when referencing submenus in posts */
+.menu>li:first-child>a, .menu li + li + li li:first-child>a {
+	color: #567;
+}
+
+/* Fix for IE5/Mac \*//*/
+.menu a {
+	float: left;
+}
+/* End Fix */
