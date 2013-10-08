@@ -12,7 +12,7 @@ ul, li { list-style: none; }
 img { border: none; }
 
 /******** STRUCTURE & SPECIFICS *****************/
-body { margin: 40px 0; background: #d4dee0 url(img/cloud-bg.jpg) no-repeat top center; font-family: 'Open Sans', sans-serif; font-size: 14px; color: #444; text-align: center; }
+body { margin: 40px 0; background: #d4dee0 url(images/cloud-bg.jpg) no-repeat top center; font-family: 'Open Sans', sans-serif; font-size: 14px; color: #444; text-align: center; }
 
 .wrap { padding: 0; width: 960px; background: #fff; margin: 0 auto; text-align: left; 
 		-webkit-box-shadow: -1px -1px 21px rgba(75, 94, 105, 0.6);
@@ -21,7 +21,7 @@ body { margin: 40px 0; background: #d4dee0 url(img/cloud-bg.jpg) no-repeat top c
 }
 #header { height: 194px; border-top: 3px solid #1b2852; }
 	.logo { margin: 0; }
-	.logo a { display: block; width: 157px; height: 66px; background: url(img/logo.gif) no-repeat; }
+	.logo a { display: block; width: 157px; height: 66px; background: url(images/logo.gif) no-repeat; }
 	.logo span { display: none; }
 	.floatl.mosti { margin: 0; }
 	.page-banner { position: relative; height: 128px; }
