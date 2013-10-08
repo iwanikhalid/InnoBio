@@ -168,27 +168,16 @@ html>body .pagination { padding: 0; }
 
 .menu li:last-child a { padding-left: 18px; padding-right: 17px; }
 
-.menu ul.sub-menu  a { color: #000 !important; background: #f4f4f4 !important; padding: 10px !important; }
+.menu ul a, .menu li .sub-menu a, .menu li .sub-menu a, .menu li.current_page_parent .sub-menu a{ color: #000; background: #f4f4f4; padding: 10px; }
 .menu ul li:last-child a { padding: 10px; }
 
-.menu a:hover, .menu li:hover>a, 
-.menu li.current_page_item  a, 
-.menu li.current-menu-parent  a, 
-.menu li.current_page_parent a
+.menu a:hover, .menu li:hover>a, .menu li.current_page_item a, .menu li.current_page_parent a, .menu li.current_page_parent .sub-menu li.current_page_item a
 {
 	color: #fff;
 	background: #5383c4;
 }
 
-.menu li.current_page_parent li.current_page_item a, 
-.menu li.current-menu-parent li.current-menu-item a,
-.menu li.current_page_item li.current-menu-item a
-{
-	color: #fff !important;
-	background: #5383c4 !important;
-}
-
-.menu ul a:hover, .menu ul li:hover>a { color: #000 !important; background: #d9e8f5 !important; }
+.menu ul a:hover, .menu ul li:hover>a, .menu li .sub-menu a:hover { color: #000; background: #d9e8f5; }
 
 .menu li li {	/* create borders around each item */
 	border-bottom: 1px solid #d9e8f5;
