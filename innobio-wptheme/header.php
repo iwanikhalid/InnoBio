@@ -60,8 +60,8 @@
 				<img class="floatl mosti" src="<?php bloginfo('template_url'); ?>/images/mosti.gif" alt="" />
 				<div class="floatl" id="nav">
 					<?php wp_nav_menu(array(
-						'theme_location' => 'main_menu'
-						'menu_class'      => 'menu, adxm',
+						'theme_location' => 'main_menu',
+						'menu_class'      => 'menu adxm',
 					)); ?>				
 				</div>
 			</div>
