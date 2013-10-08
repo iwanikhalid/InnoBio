@@ -1,31 +1,31 @@
 <?php get_header(); ?>
 
+<div class="breadcrumb">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
+</div>
+
+<div class="mainContent clearfix">
+	<?php get_sidebar(); ?>	
+
+	<div id="post-<?php the_ID(); ?>" class="main">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			
-			<h2><?php the_title(); ?></h2>
-			
-			<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
-
-			<div class="entry">
-				
-				<?php the_content(); ?>
-
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-				
-				<?php the_tags( 'Tags: ', ', ', ''); ?>
-
-			</div>
-			
-			<?php edit_post_link('Edit this entry','','.'); ?>
-			
-		</div>
-
-	<?php comments_template(); ?>
-
-	<?php endwhile; endif; ?>
 	
-<?php get_sidebar(); ?>
+		<h1 class="pagetitle"><?php the_title(); ?></h1>
+		<?php the_content(); ?>
+		
+		<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>	
+		<?php the_tags( 'Tags: ', ', ', ''); ?>
+		
+		<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+		
+		<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+	</div>
 
+		
+	<?php endwhile; endif; ?>
+
+</div>
 <?php get_footer(); ?>

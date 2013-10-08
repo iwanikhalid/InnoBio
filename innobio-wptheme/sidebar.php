@@ -1,4 +1,14 @@
-<div id="sidebar">
+<div class="sidebar">
+	<div class="avatar-frame">
+		<img src="img/avatar-about.jpg" alt="" />
+	</div>
+	<ul class="sidebarmenu">
+		<li class="active"><a href="#">About Us</a></li>
+		<li><a href="#">Our History</a></li>
+		<li><a href="#">Board of Directors</a></li>
+		<li><a href="#">Management team</a></li>
+		<li><a href="#">Organization structure</a></li>
+	</ul>
 
     <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets')) : else : ?>
     

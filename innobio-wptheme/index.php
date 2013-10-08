@@ -1,6 +1,17 @@
 <?php get_header(); ?>
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<div class="breadcrumb">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
+</div>
+
+<div class="mainContent clearfix">
+	<?php get_sidebar(); ?>	
+
+	<div class="main">
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
@@ -19,17 +30,16 @@
 			</div>
 
 		</div>
+	
+		<?php endwhile; ?>
 
-	<?php endwhile; ?>
+		<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
 
-	<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
+		<?php else : ?>
 
-	<?php else : ?>
+			<h2>Not Found</h2>
 
-		<h2>Not Found</h2>
-
-	<?php endif; ?>
-
-<?php get_sidebar(); ?>
+		<?php endif; ?>
+	</div>
 
 <?php get_footer(); ?>
