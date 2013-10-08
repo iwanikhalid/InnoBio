@@ -57,7 +57,7 @@
 		<div id="header">
 			<div class="clearfix">
 				<h1 class="floatl logo"><a href="<?php echo get_option('home'); ?>/"><span>Innobio Ventures</span></a></h1>
-				<img class="floatl mosti" src="images/mosti.gif" alt="" />
+				<img class="floatl mosti" src="<?php bloginfo('template_url'); ?>/images/mosti.gif" alt="" />
 				<div class="floatl" id="nav">
 					<ul class="menu adxm">
 						<li class="active"><a href="#">Home</a></li>
@@ -86,7 +86,7 @@
 				</div>
 			</div>
 			<div class="page-banner">
-				<img src="images/pgbanner-home.jpg" alt="" />
+				<img src="<?php bloginfo('template_url'); ?>/images/pgbanner-home.jpg" alt="" />
 				<p class="page-quote">We Drive and Advance Bio Business Ventures for Nation's Economic Growth</p>
 			</div>
 		</div>
@@ -96,7 +96,7 @@
 				<div id="slides">
 					<div class="slides_container">
 						<div class="slide">
-							<img src="images/slide1.jpg" />
+							<img src="<?php bloginfo('template_url'); ?>/images/slide1.jpg" />
 							<div class="caption">
 								<h1>Perfect Solutions</h1>
 								<p>INNO Biologics offers complete services from upstream to downstream operation for the development of your therapeutic proteins </p>
@@ -104,7 +104,7 @@
 							</div>
 						</div>
 						<div class="slide">
-							<a href="http://www.google.com"><img src="images/slide2.jpg" /></a>
+							<a href="http://www.google.com"><img src="<?php bloginfo('template_url'); ?>/images/slide2.jpg" /></a>
 							<div class="caption">
 								<h1>Center of Excellence</h1>
 								<p>Inno Bio Diagnostics is the center of excellence for R&amp;D of stem cell based technology for cell based diagnostics, cell based therapy and regenerative medicine. </p>
@@ -112,7 +112,7 @@
 							</div>
 						</div>
 						<div class="slide">
-							<img src="images/slide3.jpg" />
+							<img src="<?php bloginfo('template_url'); ?>/images/slide3.jpg" />
 							<div class="caption">
 								<h1>Great Location</h1>
 								<p>Bio Innovation Center (BIC) is the location of choice for bio-technology companies. We aspire to be your partner for bio-tech R&D and manufacturing. </p>
@@ -120,8 +120,8 @@
 							</div>
 						</div>
 					</div>
-					<a href="#" class="prev"><img src="images/arrow-prev.png" alt="Arrow Prev"></a>
-					<a href="#" class="next"><img src="images/arrow-next.png" alt="Arrow Next"></a>
+					<a href="#" class="prev"><img src="<?php bloginfo('template_url'); ?>/images/arrow-prev.png" alt="Arrow Prev"></a>
+					<a href="#" class="next"><img src="<?php bloginfo('template_url'); ?>/images/arrow-next.png" alt="Arrow Next"></a>
 				</div>	
 			</div>		
 		</div>
