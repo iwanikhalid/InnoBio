@@ -7,7 +7,7 @@
 	
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	
-	<?php if (is_search()) { ?>
+	<?php if (is_search()) {  ?>
 	   <meta name="robots" content="noindex, nofollow" /> 
 	<?php } ?>
 

@@ -1,5 +1,10 @@
 <?php
+
+// My functions
+	// Register wp menu
+	register_nav_menus(array('main_menu'=>'Main Menu'));
 	
+// WP Blank funcyions	
 	// Add RSS links to <head> section
 	automatic_feed_links();
 	
