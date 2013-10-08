@@ -4,6 +4,15 @@
 	// Register wp menu
 	register_nav_menus(array('main_menu'=>'Main Menu'));
 	
+	// Add additional body class when its insidepage
+	add_filter('body_class','add-inside-class');
+
+	function add_inside_class($classes = '') {
+		if(!is_home) $classes[] = 'inside';
+		
+		return $classes;
+	}
+	
 // WP Blank funcyions	
 	// Add RSS links to <head> section
 	automatic_feed_links();

@@ -71,38 +71,40 @@
 			</div>
 		</div>
 
-		<div id="banner">
-			<div id="slideshow">
-				<div id="slides">
-					<div class="slides_container">
-						<div class="slide">
-							<img src="<?php bloginfo('template_url'); ?>/images/slide1.jpg" />
-							<div class="caption">
-								<h1>Perfect Solutions</h1>
-								<p>INNO Biologics offers complete services from upstream to downstream operation for the development of your therapeutic proteins </p>
-								<a href="">Explore Our Technology &raquo;</a>
+		<? if(is_home) : ?>
+			<div id="banner">
+				<div id="slideshow">
+					<div id="slides">
+						<div class="slides_container">
+							<div class="slide">
+								<img src="<?php bloginfo('template_url'); ?>/images/slide1.jpg" />
+								<div class="caption">
+									<h1>Perfect Solutions</h1>
+									<p>INNO Biologics offers complete services from upstream to downstream operation for the development of your therapeutic proteins </p>
+									<a href="">Explore Our Technology &raquo;</a>
+								</div>
+							</div>
+							<div class="slide">
+								<a href="http://www.google.com"><img src="<?php bloginfo('template_url'); ?>/images/slide2.jpg" /></a>
+								<div class="caption">
+									<h1>Center of Excellence</h1>
+									<p>Inno Bio Diagnostics is the center of excellence for R&amp;D of stem cell based technology for cell based diagnostics, cell based therapy and regenerative medicine. </p>
+									<a href="">Explore Our Technology &raquo;</a>
+								</div>
+							</div>
+							<div class="slide">
+								<img src="<?php bloginfo('template_url'); ?>/images/slide3.jpg" />
+								<div class="caption">
+									<h1>Great Location</h1>
+									<p>Bio Innovation Center (BIC) is the location of choice for bio-technology companies. We aspire to be your partner for bio-tech R&D and manufacturing. </p>
+									<a href="">Explore Our Technology &raquo;</a>
+								</div>
 							</div>
 						</div>
-						<div class="slide">
-							<a href="http://www.google.com"><img src="<?php bloginfo('template_url'); ?>/images/slide2.jpg" /></a>
-							<div class="caption">
-								<h1>Center of Excellence</h1>
-								<p>Inno Bio Diagnostics is the center of excellence for R&amp;D of stem cell based technology for cell based diagnostics, cell based therapy and regenerative medicine. </p>
-								<a href="">Explore Our Technology &raquo;</a>
-							</div>
-						</div>
-						<div class="slide">
-							<img src="<?php bloginfo('template_url'); ?>/images/slide3.jpg" />
-							<div class="caption">
-								<h1>Great Location</h1>
-								<p>Bio Innovation Center (BIC) is the location of choice for bio-technology companies. We aspire to be your partner for bio-tech R&D and manufacturing. </p>
-								<a href="">Explore Our Technology &raquo;</a>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="prev"><img src="<?php bloginfo('template_url'); ?>/images/arrow-prev.png" alt="Arrow Prev"></a>
-					<a href="#" class="next"><img src="<?php bloginfo('template_url'); ?>/images/arrow-next.png" alt="Arrow Next"></a>
-				</div>	
-			</div>		
-		</div>
+						<a href="#" class="prev"><img src="<?php bloginfo('template_url'); ?>/images/arrow-prev.png" alt="Arrow Prev"></a>
+						<a href="#" class="next"><img src="<?php bloginfo('template_url'); ?>/images/arrow-next.png" alt="Arrow Next"></a>
+					</div>	
+				</div>		
+			</div>
+		<? endif ; ?>
 		<div id="content">
