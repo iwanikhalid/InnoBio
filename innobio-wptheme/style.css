@@ -174,13 +174,18 @@ html>body .pagination { padding: 0; }
 .menu a:hover, .menu li:hover>a, 
 .menu li.current_page_item  a, 
 .menu li.current-menu-parent  a, 
-.menu li.current_page_parent a, 
+.menu li.current_page_parent a
+{
+	color: #fff;
+	background: #5383c4;
+}
+
 .menu li.current_page_parent li.current_page_item a, 
 .menu li.current-menu-parent li.current-menu-item a,
 .menu li.current_page_item li.current-menu-item a
 {
-	color: #fff;
-	background: #5383c4;
+	color: #fff !important;
+	background: #5383c4 !important;
 }
 
 .menu ul a:hover, .menu ul li:hover>a { color: #000 !important; background: #d9e8f5 !important; }
