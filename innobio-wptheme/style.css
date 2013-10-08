@@ -12,7 +12,7 @@ ul, li { list-style: none; }
 img { border: none; }
 
 /******** STRUCTURE & SPECIFICS *****************/
-body { margin: 40px 0; background: #d4dee0 url(images/cloud-bg.jpg) no-repeat top center; font-family: 'Open Sans', sans-serif; font-size: 14px; color: #444; text-align: center; }
+body { margin: 40px 0;  background: #d4dee0 url(images/cloud-bg.jpg) no-repeat top center; font-family: 'Open Sans', sans-serif; font-size: 14px; color: #444; text-align: center; }
 
 .wrap { padding: 0; width: 960px; background: #fff; margin: 0 auto; text-align: left; 
 		-webkit-box-shadow: -1px -1px 21px rgba(75, 94, 105, 0.6);
