@@ -171,7 +171,7 @@ html>body .pagination { padding: 0; }
 .menu ul a, .menu li.current_page_item  ul a { color: #000; background: #f4f4f4; padding: 10px; }
 .menu ul li:last-child a { padding: 10px; }
 
-.menu a:hover, .menu li:hover>a, .menu li.current_page_item  a {
+.menu a:hover, .menu li:hover>a, .menu li.current_page_item  a, .menu li.current_page_parent a {
 	color: #fff;
 	background: #5383c4;
 }
