@@ -5,7 +5,7 @@
 	register_nav_menus(array('main_menu'=>'Main Menu'));
 	
 	// Add additional body class when its insidepage
-	add_filter('body_class','add-inside-class');
+	add_filter('body_class','add_inside_class');
 
 	function add_inside_class($classes = '') {
 		if(!is_home) $classes[] = 'inside';

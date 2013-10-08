@@ -71,7 +71,7 @@
 			</div>
 		</div>
 
-		<? if(is_home) : ?>
+		<? if(is_home()) || (is_frontpage()) : ?>
 			<div id="banner">
 				<div id="slideshow">
 					<div id="slides">
