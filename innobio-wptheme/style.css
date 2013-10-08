@@ -183,7 +183,7 @@ html>body .pagination { padding: 0; }
 	background: #5383c4;
 }
 
-.menu ul a:hover, .menu ul li:hover>a { color: #000; background: #d9e8f5; }
+.menu ul a:hover, .menu ul li:hover>a { color: #000 !important; background: #d9e8f5 !important; }
 
 .menu li li {	/* create borders around each item */
 	border-bottom: 1px solid #d9e8f5;
