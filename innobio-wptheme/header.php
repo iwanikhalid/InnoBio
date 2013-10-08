@@ -59,30 +59,10 @@
 				<h1 class="floatl logo"><a href="<?php echo get_option('home'); ?>/"><span>Innobio Ventures</span></a></h1>
 				<img class="floatl mosti" src="<?php bloginfo('template_url'); ?>/images/mosti.gif" alt="" />
 				<div class="floatl" id="nav">
-					<ul class="menu adxm">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">About Us</a>
-							<ul>
-								<li><a href="#">Board of Directors</a></li>
-								<li><a href="#">Management Team</a></li>
-								<li><a href="#">Organization Structure</a></li>
-							</ul>						
-						</li>
-						<li><a href="#">News &amp; Events</a>
-							<ul>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Events</a></li>
-								<li><a href="#">Press Release</a></li>
-							</ul>						
-						</li>
-						<li><a href="#">Career</a>
-							<ul>
-								<li><a href="#">Jobs Listing</a></li>
-								<li><a href="#">Deposit Resume</a></li>
-							</ul>						
-						</li>
-						<li><a href="#">Contact</a></li>
-					</ul>
+					<?php wp_nav_menu(array(
+						'theme_location' => 'main_menu'
+						'menu_class'      => 'menu, adxm',
+					)); ?>				
 				</div>
 			</div>
 			<div class="page-banner">
